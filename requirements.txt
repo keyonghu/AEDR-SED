@@ -1,0 +1,21 @@
+# Install matching torch, torchvision and torchaudio builds separately first.
+# Dependencies for AEDR-SED training and evaluation.
+# Bootstrap NumPy, setuptools, wheel and Cython as described in README.md first.
+# sed_scores_eval 0.0.3 needs a non-isolated build with those tools available.
+numpy<2
+pandas
+scipy
+soundfile
+librosa
+Cython>=3,<4
+wheel
+sed_scores_eval==0.0.3
+sed_eval
+dcase_util
+# dcase_util still imports pkg_resources.
+setuptools<81
+pytorch-lightning>=2.0.0,<3
+wandb
+transformers
+matplotlib
+tqdm

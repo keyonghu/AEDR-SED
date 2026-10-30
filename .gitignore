@@ -1,0 +1,45 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Local datasets, checkpoints and runtime logs
+/data/*
+!/data/.gitkeep
+/checkpoints/*
+!/checkpoints/.gitkeep
+/logs/*
+!/logs/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.wav
+*.mp3
+*.flac
+*.h5
+*.hdf5
+*.log
+*.npz
+*.npy
+*.tfevents.*
+*_metrics.json
+*manifest*.json
+source_data.csv
+/wandb/
+/lightning_logs/
+
+# Local credentials, archives and editors
+.env
+.env.*
+*.zip
+*.bak
+*.tmp
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
